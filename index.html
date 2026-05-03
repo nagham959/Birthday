@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يا سمين - عيد ميلاد سعيد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background music -->
+    <div class="music-player" id="musicPlayer" aria-hidden="true">
+        <iframe
+            id="musicFrame"
+            src="https://www.youtube-nocookie.com/embed/1UYuD_UUoFY?autoplay=1&loop=1&playlist=1UYuD_UUoFY&rel=0"
+            title="Birthday song"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Floating particles -->
+    <div class="particles"></div>
+
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-container">
+            <h1 class="splash-title">مبدأيا كده كل سنة وانتي اجمل من يتم ال 23 يا بشمهندسة و دكتورة ياسوو 🎂</h1>
+            <p class="splash-question">بس قبل ما ندخل للمفاجأة ؛  قوليلي مين احلى اخت في حياتك هه؟</p>
+            <input 
+                type="text" 
+                id="splashInput" 
+                class="splash-input" 
+                autocomplete="off"
+            />
+            <p class="splash-hint">اضغطي Enter عشان تقدري تدخلي</p>
+        </div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="music-control">
+                <button id="musicBtn" class="music-btn" title="Toggle music">
+                    <span class="music-icon">🎵</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Greeting Section -->
+        <section class="greeting-section">
+            <h1 class="main-title animated-title">عيد ميلاد رفيقة العمر </h1>
+            <p class="subtitle"></p>
+            <p class="message">
+            ياسمين يا رقيقة العينين ؛ يا طمأنينة العمر ؛ كلما ضاقت بي الدنيا آويت إالى صوتك ؛ فصارت الطمأنينة تعرف عنواني 💝<br>
+            </p>
+            
+            <!-- Random Birthday Messages -->
+            <!-- <div class="messages-container">
+                <div class="random-message"></div>
+            </div> -->
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="gallery-section">
+
+            <h2 class="section-title">موجود عدد من الصور جواهم عدد من الرسائل لأحلى سمسم في حياتنا كلنا</h2>
+            <p class="message">ملحوظه: عدد الصور والرسائل بنفس رقم عيد ميلاد الحلوة تعرفي مين الحلوة؟</p><br>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Images will be inserted here -->
+            </div>
+        </section>
+
+        <div class="photo-popup" id="photoPopup" aria-hidden="true">
+            <div class="photo-popup-card" role="dialog" aria-modal="true" aria-labelledby="photoPopupTitle">
+                <button class="photo-popup-close" id="photoPopupClose" type="button" aria-label="Close popup">×</button>
+                <h3 id="photoPopupTitle" class="photo-popup-title">🎂🎂🎂🎂🎂</h3>
+                <p class="photo-popup-message" id="photoPopupMessage"></p>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <p class="footer-text">عقبال الف سنه يا سمسم وانتي دايما منورة حياتنا كلها 🤍</p>
+            <p class="footer-signature">Made with love from your favorite sister</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
